@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DriveDesh</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    overflow:hidden;
+    color:#fff;
+}
+
+
+.video-bg{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    z-index:-2;
+}
+
+
+.overlay{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+    z-index:-1;
+}
+
+
+.content{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.logo{
+    width:150px;
+    margin-bottom:20px;
+}
+
+h1{
+    font-size:42px;
+    margin-bottom:15px;
+    letter-spacing:2px;
+}
+
+p{
+    max-width:700px;
+    line-height:1.6;
+    font-size:16px;
+    margin-bottom:30px;
+    color:#ddd;
+}
+
+.login-btn{
+    position:absolute;
+    bottom:40px;
+    padding:12px 35px;
+    font-size:16px;
+    background:#ff3c00;
+    color:#fff;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    transition:0.3s;
+    text-decoration:none;
+}
+
+.login-btn:hover{
+    background:#ff6a00;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Background Video -->
+<video class="video-bg" autoplay muted loop playsinline>
+    <source src="advideo.mp4" type="video/mp4">
+</video>
+
+<!-- Dark Overlay -->
+<div class="overlay"></div>
+
+<!-- Main Content -->
+<div class="content">
+    <img src="drivedesh_logo.png.png" alt="DriveDesh Logo" class="logo">
+
+    <h1>Welcome to DriveDesh</h1>
+
+    <p>
+        DriveDesh is your premium destination for luxury and reliable vehicle rentals.
+        We provide top-class cars for business trips, family travel, special events,
+        and self-drive experiences. Smooth rides. Zero hassle. Maximum comfort.
+    </p>
+
+    <a href="drivedesh.html" class="login-btn">Login</a>
+</div>
+
+</body>
+</html>
+
+
